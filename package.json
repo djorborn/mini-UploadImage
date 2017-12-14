@@ -1,0 +1,28 @@
+{
+  "name": "uploadimage",
+  "version": "1.0.0",
+  "description": "user can select image, preview it, upload it and view all uploaded images.",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djorborn/mini-UploadImage.git"
+  },
+  "keywords": [
+    "express.js",
+    "formidable",
+    "file-reader"
+  ],
+  "author": "djorborn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djorborn/mini-UploadImage/issues"
+  },
+  "homepage": "https://github.com/djorborn/mini-UploadImage#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "formidable": "^1.1.1"
+  }
+}

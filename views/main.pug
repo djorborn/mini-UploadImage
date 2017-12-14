@@ -1,0 +1,21 @@
+extends layout
+block main
+  h1 Upload Images
+  div(class="w3-half")
+    
+    form(action="/upload" method="POST" enctype="multipart/form-data" id="uploadimageform")
+      div(class="w3-row-padding")
+        div(class="w3-col m6 s12")
+          label(for="filetobeuploaded") Choose Image File
+          input(type="file" name="filetobeuploaded" id="filetobeuploaded" class="w3-input")
+      div(class="w3-row-padding")
+        div(class="w3-col m6 s12")
+          button(type="submit" class="w3-btn w3-deep-purple") Upload Image
+    
+    div(class="w3-container")
+        div(class="w3-card img-preview w3-padding" id="imgPreview")
+          
+  
+  div(class="w3-half")  
+      div(id="images")
+        

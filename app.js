@@ -30,3 +30,4 @@ app.post('/upload', function(req, res){
 app.get('/', function(req, res){
   res.render('main');
 })
+// mini-UploadImage app by djorborn

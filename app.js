@@ -14,6 +14,17 @@ app.post('/get_images', function(req, res){
     console.log(list);
     res.send(list);
   })
+});
+
+app.post('/upload', function(req, res){
+  var form = new formidable.IncomingForm;
+  form.parse(req, function(err, field, file){
+    var oldpath = file.filetobeuploaded.path;
+    var newpath = __dirname + '/public/images/' + file.filetobeuploaded.name;
+    fs.rename(oldpath, newpath, function(err, reply){
+      res.send("file uploaded maybe");
+    })
+  })
 })
 
 app.get('/', function(req, res){
